@@ -6,8 +6,8 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { AuthProvider, Auth } from "@/contexts/aluno/AuthContext";
 
 // PAGES 
-import Home from "./pages/site/Home";
-import Login from "./pages/auth/aluno/Login";
+import Home from "@/pages/site/Home";
+import Login from "@/pages/auth/aluno/Login";
 
 
 export default function App() {
@@ -35,7 +35,7 @@ function PrivateRoute({children }) {
   return children;
 }
 
-// Rotas prublicas
+// Rotas publicas
 function PublicRoute({children }) {
   // Verificando auth
   const { auth, setAuth } = useContext(Auth);

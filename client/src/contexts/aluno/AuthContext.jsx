@@ -6,7 +6,7 @@ export const Auth = createContext();
 // 2. Criando o provider
 export const AuthProvider = ({ children }) => {
   // dados a ser compartilhados
-  const [auth, setAuth] = useState(true);
+  const [auth, setAuth] = useState(false);
 
   // Função para atualizar
   const atualizarAuth = (status) => {
