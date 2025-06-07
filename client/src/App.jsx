@@ -3,11 +3,11 @@ import React, { useContext } from 'react';
 // Importando o react-router-dom
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 // Contexto de autenticação
-import { AuthProvider, Auth } from "@/contexts/aluno/AuthContext";
+import { AuthProvider, Auth } from "@/contexts/AuthContext";
 
 // PAGES 
 import Home from "@/pages/site/Home";
-import Login from "@/pages/auth/aluno/Login";
+import Login from "@/pages/auth/Login";
 
 
 export default function App() {
